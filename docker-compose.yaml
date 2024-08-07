@@ -1,0 +1,13 @@
+services:
+  ? ffc-sfd-file-receiver
+  : build:
+      context: .
+      target: production
+    image: ffc-sfd-file-receiver
+    container_name: ffc-sfd-file-receiver
+    depends_on:
+      - ffc-sfd-file-receiver-postgres
+    environment:
+      APPINSIGHTS_CLOUDROLE: ffc-sfd-file-receiver-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
+

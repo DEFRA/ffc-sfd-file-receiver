@@ -1,0 +1,8 @@
+{{- include "adp-helm-library.deployment" (list . "ffc-sfd-file-receiver.deployment") -}}
+{{- define "ffc-sfd-file-receiver.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "adp-helm-library.container" (list . "ffc-sfd-file-receiver.container") }}
+{{- end -}}

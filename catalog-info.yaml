@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ffc-sfd-file-receiver
+  description: This service is a prototype and research for documents upload functionality for
+    single front door
+  annotations:
+    github.com/project-slug: DEFRA/ffc-sfd-file-receiver
+    dev.azure.com/project: DEFRA-FFC
+    dev.azure.com/build-definition: ffc-sfd-file-receiver
+    sonarqube.org/project-key: ffc-sfd-file-receiver
+    grafana/dashboard-selector: "folderTitle == 'Managed Prometheus'"
+    backstage.io/kubernetes-id: ffc-sfd-file-receiver
+  links:
+    - url: https://github.com/DEFRA/ffc-sfd-file-receiver
+      title: GitHub Repository
+      icon: github
+    - url: https://dev.azure.com/defragovuk/DEFRA-FFC
+      title: Azure DevOps Project
+      icon: project
+    - url: https://sonarcloud.io/project/overview?id=ffc-sfd-file-receiver
+      title: SonarCloud Analysis
+      icon: check
+    - url: https://snyk.io/test/github/DEFRA/ffc-sfd-file-receiver
+      title: Snyk Analysis
+      icon: policy
+    - url: https://portal.azure.com/defradev.onmicrosoft.com
+      title: Azure Portal - Defra Dev
+      icon: cloud
+    - url: https://portal.azure.com/Defra.onmicrosoft.com
+      title: Azure Portal - Defra
+      icon: cloud
+spec:
+  type: backend
+  lifecycle: alpha
+  owner: group:default/fcp-sfd
+  

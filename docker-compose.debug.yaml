@@ -1,0 +1,3 @@
+services:
+  ? ffc-sfd-file-receiver
+  : command: npm run start:debug

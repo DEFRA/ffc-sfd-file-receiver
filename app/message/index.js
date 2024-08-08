@@ -12,13 +12,13 @@ const handleMessage = async (message, receiver) => {
 }
 
 const startMessaging = async () => {
-  let messagesReceiver //eslint-disable-line
-  const receiverAction = (message) => handleMessage(message, messagesReceiver)
-  messagesReceiver = new MessageReceiver(
+  let filesReceiver //eslint-disable-line
+  const receiverAction = (message) => handleMessage(message, filesReceiver)
+  filesReceiver = new MessageReceiver(
     messageConfig.receiverSubscription,
     receiverAction
   )
-  await messagesReceiver.subscribe()
+  await filesReceiver.subscribe()
   console.info('File processor is ready to receive metadata')
 }
 

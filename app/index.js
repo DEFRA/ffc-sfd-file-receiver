@@ -1,9 +1,8 @@
-const server = require('./server')
+require('./insights').setup()
+require('log-timestamp')
 const { startMessaging } = require('./message')
 
 const init = async () => {
-  await server.start()
-  console.log('Server running on %s', server.info.uri)
   await startMessaging()
 }
 

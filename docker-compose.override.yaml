@@ -2,13 +2,13 @@
 # to provide dependencies and expose ports for local testing
 
 services:
-  ? ffc-sfd-file-receiver
-  : build:
+  ffc-sfd-file-receiver:
+    build:
       target: development
     image: ffc-sfd-file-receiver-development
     container_name: ffc-sfd-file-receiver-development
     ports:
-      - "3000:3000"
+      - "3020:3020"
       - "9229:9229"
     volumes:
       - ./app:/home/node/app

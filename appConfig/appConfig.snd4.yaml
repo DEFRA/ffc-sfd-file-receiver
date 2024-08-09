@@ -9,3 +9,5 @@
   value: "fcp-sfd-file-metadata"
 - key: FILE_RECEIVER_SUBSCRIPTION_ADDRESS
   value: "fcp-sfd-file-receiver"
+- key: COSMOS_ENDPOINT
+  value: "https://fcp-sfd-temp-cosmos.documents.azure.com:443/"

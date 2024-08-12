@@ -4,7 +4,6 @@ const { cosmosConfig } = require('../config')
 const saveToCosmos = async (message) => {
   try {
     const { filesDatabase } = await cosmosInstance()
-    console.log('************************', cosmosConfig.filesContainer)
     await filesDatabase
       .container(cosmosConfig.filesContainer)
       .items.create(message.body)

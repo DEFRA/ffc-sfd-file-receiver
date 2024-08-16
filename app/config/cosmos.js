@@ -12,7 +12,9 @@ const schema = Joi.object({
 const config = {
   endpoint: process.env.COSMOS_ENDPOINT,
   key: process.env.COSMOS_KEY,
-  managedIdentityClientId: process.env.AZURE_CLIENT_ID
+  managedIdentityClientId: process.env.AZURE_CLIENT_ID,
+  filesDatabase: process.env.COSMOS_FILES_DATABASE,
+  filesContainer: process.env.COSMOS_FILES_CONTAINER
 }
 
 const { error, value } = schema.validate(config, { abortEarly: false })

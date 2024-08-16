@@ -11,3 +11,7 @@
   value: "fcp-sfd-file-receiver"
 - key: COSMOS_ENDPOINT
   value: "https://fcp-sfd-temp-cosmos.documents.azure.com:443/"
+- key: COSMOS_FILES_DATABASE
+  value: "ffc-sfd-customer-receiver-files"
+- key: COSMOS_FILES_CONTAINER
+  value: "files-container"
